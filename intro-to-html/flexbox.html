@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Practice</title>
+
+    <link rel="stylesheet" href="Styles/header.css">
+    <link rel="stylesheet" href="Styles/general.css">
+    <link rel="stylesheet" href="Styles/video.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <style>
+
+      .Inbox-ava{
+        padding-left: 10px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 16px;
+      }
+
+      .Inbox{
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(232, 232, 232);
+      box-shadow: 1px 2px 5px rgba(0,0,0,0.15);
+      border-radius: 3px;
+      width: fit-content;
+      margin-top: 30px;
+      }
+
+      .Inbox-text{
+        padding-right: 18px;
+      }
+
+      .name-and-time{
+        display: flex;
+        justify-content: space-between;
+      }
+      .name{
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 3px;
+        display: inline-block;
+        
+      }
+      .time{
+        font-family: Roboto;
+        font-size: 13px;
+        color: rgb(87, 87, 87);
+        margin-top: 0px;
+        margin-bottom: 3px;
+        display: inline-block;
+      }
+      .title{
+        font-family: Roboto;
+        font-size: 13px;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 3px;
+      }
+      .snippet{
+        font-family: Roboto;
+        font-size: 13px;
+        color: rgb(153, 153, 153);
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    </style>
+  </head>
+  <body style="padding-bottom: 1000px;">
+    <div style="
+    display: flex;
+    flex-direction: row;
+    ">
+      <div style="background-color: lightblue;">div 1</div>
+      <div style="background-color: lightpink;">div 2</div>
+    </div>
+
+    <div style="
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    ">
+      <div style="
+        background-color: lightblue;
+        width: 100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        flex: 1;
+      ">flex 1</div>
+    </div>
+
+    <div style="
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    ">
+      <div style="
+        background-color: lightblue;
+        flex: 1;
+      ">flex 1</div>
+      <div style="
+        background-color: lightpink;
+        width:100px;
+      ">100px</div>
+      <div style="
+      background-color: lightblue;
+      flex: 2;
+    ">flex 2</div>
+    </div>
+
+    <div style="
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    justify-content: center;
+    ">
+      <div style="
+        background-color: lightblue;
+        width:100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        width:100px;
+      ">100px</div>
+      <div style="
+      background-color: lightblue;
+      width:100px;
+      ">100px</div>
+    </div>
+
+    <div style="
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    justify-content: center;
+    justify-content: space-between;
+    ">
+      <div style="
+        background-color: lightblue;
+        width:100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        width:100px;
+      ">100px</div>
+      <div style="
+      background-color: lightblue;
+      width:100px;
+      ">100px</div>
+    </div>
+
+    <div style="
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: gray;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    ">
+      <div style="
+        background-color: lightblue;
+        width:100px;
+      ">100px</div>
+      <div style="
+        background-color: lightpink;
+        width:100px;
+      ">100px</div>
+      <div style="
+      background-color: lightblue;
+      width:100px;
+      ">100px</div>
+    </div>
+
+    <div style="
+    display: flex;
+    margin-top: 30px;">
+      <div style="
+      background-color: lightblue;
+      width: 200px;
+      ">200px</div>
+      <div style="
+      background-color: lightpink;
+      width: 75px;
+      ">75px</div>
+    </div>
+
+    <div style="display: flex; margin-top: 30px;">
+      <div style="
+      background-color: lightblue;
+      width: 50px;
+      ">item1</div>
+      <div style="
+      background-color: lightpink;
+      flex: 1;
+      ">item2</div>
+      <div style="
+      background-color: lightblue;
+      width: 75px;
+      ">item3</div>
+    </div>
+
+    <div style="
+    display: flex; 
+    margin-top: 30px;
+    justify-content: space-between;
+    ">
+      <div style="
+      background-color: lightblue;
+      ">item1</div>
+      <div style="
+      background-color: lightpink;
+      ">item2</div>
+      <div style="
+      background-color: lightblue;
+      ">item3</div>
+      <div style="
+      background-color: lightpink;
+      ">item4</div>
+    </div>
+
+    <div style="
+    display: flex; 
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    border-radius: 1px;
+    height: 50px;
+    border-color: gray;
+    ">
+      <div style="
+      background-color: lightblue;
+      ">item1</div>
+      <div style="
+      background-color: lightpink;
+      ">item2</div>
+    </div>
+
+    <div style="
+    margin-top: 30px;
+    display: flex; 
+    justify-content:space-between;
+    width: 250px;
+    height: 100px;
+    border-style: solid;
+    border-radius: 0.5px;
+    border-color: gray;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;">
+      <div style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;">
+        <div>Home</div>
+        <div>Notification</div>
+        <div>Messages</div>
+      </div>
+
+      <div style="
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;">
+        <button style="
+        background-color: brown;
+        font-weight: bold;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        ">14</button>
+        <button style="
+        background-color: brown;
+        font-weight: bold;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;">3</button>
+        <button style="
+        background-color: brown;
+        font-weight: bold;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 2px;
+        padding-bottom: 2px;">5</button>
+      </div>
+    </div>
+
+    <div style="
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    height: 50px;">
+      <p style="width: 150px;">Home</p>
+      <input type="text" placeholder="Search"
+      style="height: 30px;">
+      <button style="height: 30px;">Download</button>
+    </div>
+
+    <div style="
+    display: flex;
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;">
+      <div style="
+      background-color: lightpink;
+      flex:1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      ">
+      <div style="background-color: black;
+      color: white;
+      width: fit-content;
+      ">item1</div>
+      </div>
+      <div style="
+      background-color: lightblue;
+      width: 200px;
+      "></div>
+    </div>
+
+    <div style="
+      display: flex;
+      flex-direction: column;
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(232, 232, 232);
+      box-shadow: 1px 2px 5px rgba(0,0,0,0.15);
+      padding-top: 2px;
+      padding-bottom: 6px;
+      padding-left: 3px;
+      padding-right: 3px;">
+      
+        <div style="
+        color: gray;
+        font-family: arial;
+        font-size: 13px;
+        padding-left: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        ">ALL INBOXES
+        </div>
+        
+        <div class="Inbox-card" style="display: flex;">
+
+          <div style="width: 50px;">
+            <img src="Images/shiba.jpg" style="height: 40px;
+            border-radius: 20px; width: 40px; object-fit: cover;">
+          </div>
+
+          <div>
+              <div style="
+              font-weight: bold;
+              font-size: 16px;
+              font-family: arial;
+              ">Chewy Promotions</div>
+              <div style="
+              font-weight: bold;
+              font-size: 14px;
+              font-family: arial;
+              ">Biggest sales of the year</div>
+              <div style="
+              color: gray;
+              font-family: arial;
+              font-size: 13px;
+              ">Hey there! We're writing to tell you about your...
+              </div>
+          </div>
+
+     
+
+        </div>
+      </div>
+
+      <div class="Inbox">
+        <div class="Inbox-heading"
+        style="
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        font-family: Roboto;
+        font-size: 13px;
+        color: rgb(110, 110, 110);
+        ">ALL INBOXES</div>
+
+        <div class="Inbox-body"
+        style="
+        display: flex;
+        ">
+          <div class="Inbox-ava"><img src="Images/shiba.jpg"
+            style="width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;"></div>
+          <div class="Inbox-text">
+            <div class="name-and-time">
+              <p class="name">Chewy Promotions</p>
+              <p class="time">4:58 PM</p>
+            </div>
+            <p class="title">Biggest sales of the year</p>
+            <p class="snippet">Hey there! We're writing to tell you about your...</p>
+          </div>
+        </div>
+
+        <div class="Inbox-body"
+        style="
+        display: flex;
+        ">
+          <div class="Inbox-ava"><img src="Images/guinea pig.jpg"
+            style="width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;"></div>
+          <div class="Inbox-text">
+            <div class="name-and-time">
+              <p class="name">Best Buy</p>
+              <p class="time">12:32 PM</p>
+            </div>
+            <p class="title">Your Best Buy eReceipt</p>
+            <p class="snippet">Thank you for shopping at Best Buy, here is...</p>
+          </div>
+        </div>
+
+        <div class="Inbox-body"
+        style="
+        display: flex;
+        justify-content: space-between;
+        ">
+          <div class="Inbox-ava"><img src="Images/parrot.jpg"
+            style="width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;"></div>
+          <div class="Inbox-text">
+            <div class="name-and-time">
+              <p class="name">Netflix</p>
+              <p class="time">9:00 AM</p>
+            </div>
+            <p class="title">Here's what's coming soon to Netflix</p>
+            <p class="snippet">Brand new movies and shows, old favourites...</p>
+          </div>
+        </div>
+
+
+
+        
+      </div>
+  </body>
+</html>

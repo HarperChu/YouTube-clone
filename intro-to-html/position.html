@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<HTML>
+  <head>
+    <title>Position Practice</title>
+  </head>
+  <body style="height: 4000px;
+  padding-top: 60px;
+  padding-left: 70px;">
+    <div style="
+      background-color: black;
+      color: white;
+      position: fixed;
+      top: 0px;
+      height: 50px;
+      left: 80px;
+      right: 100px;
+    ">Header</div>
+
+    <div style="
+    background-color: green;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    z-index: 1;">sidebar
+      <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      right: 0px;
+      top: 0px;
+    ">X</div>
+    </div>
+    
+    <div style="
+      background-color: lightblue;
+      height: 200px;
+      width: 200px;
+      position: static;">div1
+    </div>
+    <div style="
+     background-color: lightpink;
+      height: 200px;
+      width: 200px;
+      position: relative;">div2
+      <div style="
+      position: absolute;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      right: 10px;
+      bottom: 10px;
+    ">5:00</div>
+    </div>
+
+    <div style="
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;">bottom-right</div>
+
+    <div style="position: fixed;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100px;
+    background-color: green;
+    color: white;">right sidebar
+      <div style="
+      position: absolute;
+      background-color: red;
+      color: white;
+      left: 10px;
+      top: 10px;
+    ">absolute</div></div>
+
+  </div>
+
+  <div style="
+    position: absolute;
+    background-color: red;
+    color: white;
+    left: 10px;
+    top: 10px;
+  ">absolute</div>
+
+  </body>
+</HTML>
